@@ -183,6 +183,7 @@ function Employees() {
           <table className="table text-center">
             <thead>
               <tr>
+              <th className="w-1/12 px-4 py-2 text-center">id</th>
                 <th className="w-1/2 px-4 py-2 text-center">Nombre</th>
                 <th className="px-4 py-2 text-center">Horas trabajadas</th>
                 <th className="w-1/4 px-4 py-2 text-center">Aciones</th>
@@ -191,6 +192,7 @@ function Employees() {
             <tbody>
               {Employee.map((emp) => (
                 <tr key={emp.id}>
+                  <td className="border px-4 py-2">{emp.id_emp}</td>
                   <td className="border px-4 py-2">{emp.Nombre}</td>
                   <td className="border px-4 py-2">{emp.Horas}</td>
                   <td className="border px-4 py-2">
