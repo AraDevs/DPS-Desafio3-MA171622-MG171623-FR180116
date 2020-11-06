@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { UserContext } from "../providers/UserProvider";
 import { auth } from "../firebase";
 import { Router, Link } from "@reach/router";
+import Employees from "./Employees";
 
 const ProfilePage = () => {
 
@@ -30,8 +31,11 @@ const ProfilePage = () => {
           </ul>
         </div>
       </nav>
+      <Employees/>
+
       <Router>
       </Router>
+
           </div>
   )
 };
