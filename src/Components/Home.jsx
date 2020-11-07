@@ -3,6 +3,7 @@ import { UserContext } from "../providers/UserProvider";
 import { auth } from "../firebase";
 import { Router, Link } from "@reach/router";
 import Employees from "./Employees";
+import Salaries from "./Salaries";
 
 const ProfilePage = () => {
 
@@ -19,24 +20,26 @@ const ProfilePage = () => {
 
   return (
     <div>
-      <nav className="navbar bg-blue-600">
+      <nav className="navbar bg-blue-600 text-white sticky top-0">
         <div className="container-fluid">
           <div className="navbar-header">
             <a className="navbar-brand" href="/">Desafio 3 DPS</a>
           </div>
           <ul className="nav navbar-nav">
             <li className="active"><Link to="/">Inicio</Link></li>
+            <li><Link to="salaries" >Ver sueldos</Link></li>
             <button className="btn btn-danger" onClick={() => { signOut() }}>
               Cerrar sesion</button>
           </ul>
         </div>
       </nav>
-      <Employees/>
 
       <Router>
+        <Employees path="/" />
+        <Salaries path="salaries" />
       </Router>
 
-          </div>
+    </div>
   )
 };
 

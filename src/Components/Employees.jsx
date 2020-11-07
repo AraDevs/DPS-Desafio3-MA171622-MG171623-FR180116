@@ -146,7 +146,7 @@ function Employees() {
 
   return (
   <div className="container py-2">
-    <h1 className="py-6 text-3xl text-center">Agregar Empleados</h1>
+    <h1 className="py-6 text-6xl text-center">Agregar Empleados</h1>
     <form onSubmit={addOrEditEmployee} className="w-full max-w-lg mx-auto my-6">
       <div className="w-full md:w-full px-3">
       <label className="text-base block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
