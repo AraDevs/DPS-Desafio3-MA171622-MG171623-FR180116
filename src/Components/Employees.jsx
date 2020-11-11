@@ -44,8 +44,8 @@ function Employees() {
         else if (n==="Horas") {
           var numero = parseFloat(values[n]);
           console.log(numero);
-          if (!Number.isInteger(numero) || numero<0) {
-            Swal.fire("El numero debe ser entero y mayor a 0", "Operación Fallida", "error");
+          if (!Number.isInteger(numero) || numero<0 || numero>250) {
+            Swal.fire("El numero debe ser entero y mayor o igual a 0 y menor o igual a 250", "Operación Fallida", "error");
             return true;
           }
         }
