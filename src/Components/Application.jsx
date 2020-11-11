@@ -4,9 +4,8 @@ import { Router } from "@reach/router";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import PasswordReset from "./PasswordReset";
-
-import ProfilePage from "./Home";
 import { UserContext } from "../providers/UserProvider";
+import Employees from "./Employees";
 
 
 function Application() {
@@ -24,7 +23,7 @@ function Application() {
           <PasswordReset path="passwordReset" />      
       </Router>  
       : 
-      <ProfilePage />
+      <Employees />
   );
 }
 
