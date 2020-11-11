@@ -33,7 +33,7 @@ const ProfilePage = () => {
           </ul>
         </div>
       </nav>
-
+      <Employees/>
       <Router>
         <Employees path="/" />
         <Salaries path="salaries" />
