@@ -33,9 +33,9 @@ const ProfilePage = () => {
           </ul>
         </div>
       </nav>
-      <Employees/>
       <Router>
         <Employees path="/" />
+        <Employees path="/signUp" />
         <Salaries path="salaries" />
       </Router>
 
