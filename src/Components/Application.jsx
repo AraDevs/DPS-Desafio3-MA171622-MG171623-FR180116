@@ -18,13 +18,12 @@ function Application() {
 
   return (
     !user ?
-      /*<Router> 
+      <Router> 
           <SignIn path="/" />
           <SignUp path="signUp" />
           <PasswordReset path="passwordReset" />      
-      </Router>   // true*/
-      <ProfilePage />
-      : // false
+      </Router>  
+      : 
       <ProfilePage />
   );
 }
