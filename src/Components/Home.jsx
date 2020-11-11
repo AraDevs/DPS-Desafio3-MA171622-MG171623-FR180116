@@ -15,7 +15,8 @@ const ProfilePage = () => {
   //console.log(" Usuario ProfilePage : " + displayName + " - " + email);
 
   const signOut = () => {
-    auth.signOut();  
+    auth.signOut();
+    window.location.href="/";
   };
 
   return (
